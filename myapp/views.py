@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
 from .models import Student
-
+from datetime import date
 
 
 def home(request):
-    return render(request,'home.html')
+    count=Student.objects.count()
+    return render(request,'home.html',{'count':count})
 
 
 def register_view(request):
@@ -93,3 +94,6 @@ def delete_student(request):
 def logout(request):
     request.session.flush()
     return redirect('login')
+
+def contact(request):
+    return render(request,'contact.html')
