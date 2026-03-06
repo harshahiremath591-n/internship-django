@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Gill sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /* Header */
+        
+        header {
+            background: #ff3700;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+        /* Navbar */
+        
+        nav {
+            background: #222;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        nav a {
+            float: left;
+            width: 25%;
+            text-align: center;
+            padding: 14px 0;
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            background: #444;
+        }
+        /* Layout */
+        
+        .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Sidebar */
+        
+        .left {
+            width: 30%;
+            background: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        /* Product Section */
+        
+        .right {
+            width: 70%;
+            background: #eaeaea;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        /* Product Card */
+        
+        .product {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        button {
+            background: #ff6f00;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background: #54e600;
+        }
+        /* Footer */
+        
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+        }
+        /* Responsive */
+        
+        @media (max-width:768px) {
+            .left,
+            .right {
+                width: 100%;
+            }
+            nav a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Shopping Store</h1>
+        <p>Best Deals & Offers</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="left">
+            <h2>Categories</h2>
+            <ul>
+                <li>Electronics</li>
+                <li>Clothing</li>
+                <li>Shoes</li>
+                <li>Accessories</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <h2>Featured Products</h2>
+
+            <div class="product">
+                <h3>Smartphone</h3>
+                <p>Price: ₹15,000</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Running Shoes</h3>
+                <p>Price: ₹2,000</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Headphones</h3>
+                <p>Price: ₹1,200</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Online Shop | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

@@ -97,3 +97,6 @@ def logout(request):
 
 def contact(request):
     return render(request,'contact.html')
+
+def week3_5(request):
+    return render(request,'week3_5.html')
