@@ -32,6 +32,6 @@ urlpatterns = [
     path('basic',views.basic,name='basic'),
     path('s_portel',views.s_portel,name='s_portel'),
     path('js_basics',views.js_basics,name='js_basics'),
-    path('mini_project',views.mini_project basics,name='mini_project'),
-    path('list',views.list basics,name='list'),
+    path('mini_project',views.mini_project,name='mini_project'),
+    path('list',views.list,name='list'),
 ]
