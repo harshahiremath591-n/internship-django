@@ -29,9 +29,9 @@ urlpatterns = [
     path('contact',views.contact,name='contact'),
     path('week3_5',views.week3_5,name='week3_5'),
     path('week4_4',views.week4_4,name='week4_4'),
-    path('3',views.3,name='3'),
-    path('INDEX.html2',views.INDEX.html2,name='INDEX.html2'),
+    path('basic',views.basic,name='basic'),
+    path('s.portel',views.s.portel,name='s.portel'),
     path('js basics',views.js basics,name='js basics'),
     path('mini_project',views.mini_project basics,name='mini_project'),
-    path('Untitled-1o',views.Untitled-1o basics,name='Untitled-1o'),
+    path('list',views.list basics,name='list'),
 ]
