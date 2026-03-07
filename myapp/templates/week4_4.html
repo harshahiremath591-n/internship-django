@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            margin-top: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        input {
+            width: 30%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <!-- HTML FORM -->
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="course" placeholder="Course" required>
+        <button type="submit">Save</button>
+    </form>
+
+    <!-- DISPLAY DATA -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+
+<script>
+    // Load data when page opens
+    document.addEventListener("DOMContentLoaded", loadData);
+
+    document.getElementById("studentForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let course = document.getElementById("course").value;
+
+        let students = JSON.parse(localStorage.getItem("students")) || [];
+
+        students.push({ name, age, course });
+
+        localStorage.setItem("students", JSON.stringify(students));
+
+        this.reset();
+        loadData();
+    });
+
+    function loadData() {
+        let students = JSON.parse(localStorage.getItem("students")) || [];
+        let tableBody = document.getElementById("tableBody");
+        tableBody.innerHTML = "";
+
+        students.forEach(student => {
+            let row = `
+                <tr>
+                    <td>${student.name}</td>
+                    <td>${student.age}</td>
+                    <td>${student.course}</td>
+                </tr>
+            `;
+            tableBody.innerHTML += row;
+        });
+    }
+</script>
+
+</body>
+</html>
