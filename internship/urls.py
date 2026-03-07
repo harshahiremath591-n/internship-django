@@ -30,8 +30,8 @@ urlpatterns = [
     path('week3_5',views.week3_5,name='week3_5'),
     path('week4_4',views.week4_4,name='week4_4'),
     path('basic',views.basic,name='basic'),
-    path('s.portel',views.s.portel,name='s.portel'),
-    path('js basics',views.js basics,name='js basics'),
+    path('s_portel',views.s_portel,name='s_portel'),
+    path('js_basics',views.js_basics,name='js_basics'),
     path('mini_project',views.mini_project basics,name='mini_project'),
     path('list',views.list basics,name='list'),
 ]
