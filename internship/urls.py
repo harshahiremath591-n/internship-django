@@ -28,4 +28,5 @@ urlpatterns = [
     path('logout/', views.logout, name='logout'),
     path('contact',views.contact,name='contact'),
     path('week3_5',views.week3_5,name='week3_5'),
+    path('week4_4',views.week4_4,name='week4_4'),
 ]
