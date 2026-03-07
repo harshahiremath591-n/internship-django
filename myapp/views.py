@@ -108,13 +108,13 @@ def basic(request):
     return render(request,'basic.html')
 
 def s_portel(request):
-    return render(request,'s.portel.html')
+    return render(request,'s_portel.html')
 
 def js_basics(request):
-    return render(request,'js basics.html')
+    return render(request,'js_basics.html')
 
 def mini_project(request):
     return render(request,'mini_project.html')
 
 def list(request):
-    return render(request,'list')
+    return render(request,'list.html')
