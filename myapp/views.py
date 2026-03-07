@@ -105,15 +105,15 @@ def week4_4(request):
     return render(request,'week4_4.html')
 
 def 3(request):
-    return render(request,'3')
+    return render(request,'3.html')
 
 def INDEX.html2(request):
-    return render(request,'INDEX.html2')
+    return render(request,'INDEX.html2.html')
 
 def js basics(request):
-    return render(request,'js basics')
+    return render(request,'js basics.html')
 def mini_project(request):
-    return render(request,'mini_project')
+    return render(request,'mini_project.html')
 
 def Untitled-1o(request):
-    return render(request,'Untitled-1o')
+    return render(request,'Untitled-1o.html')
