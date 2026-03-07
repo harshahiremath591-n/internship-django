@@ -27,10 +27,5 @@ urlpatterns = [
     path('delete_student/', views.delete_student, name='delete_student'),
     path('logout/', views.logout, name='logout'),
     path('contact',views.contact,name='contact'),
-<<<<<<< HEAD
     path('week3_5',views.week3_5,name='week3_5'),
-    path('week4_4',views.week4_4,name='week4_4'),
-=======
-    path('week3_5/', views.week3_5, name='week3_5'),
->>>>>>> a7f3d9b6c765d702d4953c2dcf5613d608779350
 ]
