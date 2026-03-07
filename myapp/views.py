@@ -103,3 +103,17 @@ def week3_5(request):
 
 def week4_4(request):
     return render(request,'week4_4.html')
+
+def 3(request):
+    return render(request,'3')
+
+def INDEX.html2(request):
+    return render(request,'INDEX.html2')
+
+def js basics(request):
+    return render(request,'js basics')
+def mini_project(request):
+    return render(request,'mini_project')
+
+def Untitled-1o(request):
+    return render(request,'Untitled-1o')
