@@ -104,13 +104,13 @@ def week3_5(request):
 def week4_4(request):
     return render(request,'week4_4.html')
 
-def 3(request):
-    return render(request,'3.html')
+def basic(request):
+    return render(request,'basic.html')
 
-def s.portel(request):
+def s_portel(request):
     return render(request,'s.portel.html')
 
-def js basics(request):
+def js_basics(request):
     return render(request,'js basics.html')
 
 def mini_project(request):
